@@ -38,7 +38,7 @@ function Home() {
         console.error('Error fetching data:', error);
         setError(error);
       });
-  },);
+  },[]);
   return (
     <div style={{ height: '80%', width: '100%' }}>
       {error && <Alert severity="error">Erro ao buscar as licitações</Alert>}
